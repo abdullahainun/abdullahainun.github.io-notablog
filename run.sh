@@ -4,17 +4,17 @@
 
 # get the userId of the email
 menu=$1
-WORKING_DIR=`pwd`
+WORKING_DIR="/home/aal/Workspace/Lab/abdullahainun.github.io"
 cd $WORKING_DIR
-if [ "$menu" == '1' ];
+if [ "$menu" == 'generate' ];
 then
     notablog generate .
     echo $'\nGenerate Pages Successfully!\n'
-elif [ "$menu" == '2' ];
+elif [ "$menu" == 'preview' ];
 then
     notablog preview .
     echo $'\nNotablog Preview!\n'
-elif [ "$menu" == '3' ];
+elif [ "$menu" == 'serve' ];
 then
     notablog generate . && notablog preview .
     echo $'\nGenerate Pages Successfully!\n'
